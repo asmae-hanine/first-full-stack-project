@@ -11,6 +11,10 @@
 
     <!-- header style -->
     <link rel="stylesheet" href="./css/header-style.css">
+
+    <!-- body style  -->
+    <link rel="stylesheet" href="./css/style.css">
+
     <title>Otaku's Shop</title>
 </head>
 
@@ -19,7 +23,15 @@
     include "./imports/header.php";
     ?>
 
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-subheading">Welcome To Our Studio!</div>
+            <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+            <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+            <button class="button-55" role="button">Button 55</button>
 
+        </div>
+    </header>
 
     <?php
     include "./imports/footer.php";
