@@ -7,7 +7,7 @@
     background-image: url('../images/background.jpg'); /* Replace 'your-image-url.jpg' with the actual URL of your image */
     background-size: cover;
     background-position: center;
-    color: #fff; /* Set the text color */
+    color: #212529; /* Set the text color */
   }
   
   .masthead-content {
@@ -26,46 +26,90 @@
   
   .btn-primary, .button-55 {
     color: #212529; /* Set the text color for the button */
-    background-color: #ffc800; /* Set the background color for the button */
-    border-color: #ffc800; /* Set the border color for the button */
+    background-color: #d99274ad; /* Set the background color for the button */
+    border-color: #d99274ad; /* Set the border color for the button */
   }
   
   .btn-primary:hover, .button-55:hover {
-    background-color: #cca000; /* Set the hover background color for the button */
+    background-color: #d99374; /* Set the hover background color for the button */
   }
 
+  /* anime word font  */
+  .anime-font{
+    font-family: 'Caveat', cursive, 'Pixelify Sans', sans-serif, 'Poppins', sans-serif, 'Roboto', sans-serif;
+  }
 
 /*button CSS */
-.button-55 {
-    align-self: center;
-    background-color: #fff;
-    background-image: none;
-    background-position: 0 90%;
-    background-repeat: repeat no-repeat;
-    background-size: 4px 3px;
-    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
-    border-style: solid;
-    border-width: 2px;
-    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
-    box-sizing: border-box;
-    color: #41403e;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Neucha, sans-serif;
-    font-size: 1rem;
-    line-height: 23px;
-    outline: none;
-    padding: .75rem;
-    text-decoration: none;
-    transition: all 235ms ease-in-out;
-    border-bottom-left-radius: 15px 255px;
-    border-bottom-right-radius: 225px 15px;
-    border-top-left-radius: 255px 15px;
-    border-top-right-radius: 15px 225px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    }
+
+
+/* CSS */
+.button-86 {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+.button-86::after,
+.button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
     
     .button-55:hover {
     box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
@@ -80,5 +124,16 @@
 
     /* footer style color  */
     footer{
-background-color: #d99274ad;}
+background-color: #212529;}
 
+/* Change the text selection color */
+::selection {
+  background-color: #d99274ad; /* Set your desired background color */
+  color: white; /* Set your desired text color */
+}
+
+/* Change the text selection color for older versions of Firefox */
+::-moz-selection {
+  background-color: #d99274ad;
+  color: white;
+}

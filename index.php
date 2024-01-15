@@ -24,11 +24,11 @@
     ?>
 
     <header class="masthead">
-        <div class="container">
-            <div class="masthead-subheading">Welcome To Our Studio!</div>
+        <div class="container container-color">
+            <div class="masthead-subheading">Welcome To Our <span class='anime-font'>Anime</span> Shop!</div>
             <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-            <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
-            <button class="button-55" role="button">Button 55</button>
+            <!-- button -->
+            <button class="button-86" role="button" onclick="window.location.href='products.php'">Shop Now</button>
 
         </div>
     </header>
